@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="mySqlDataSource" />
+		<property name="mapperLocations" value="classpath:com/syntis/mapperx/*Mapper.xml" />
+	</bean>
+	
+	<bean id="syntisMapper" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	 	<property name="sqlSessionFactory" ref="sqlSessionFactory"/> 
+	 	<property name="basePackage" value="com.syntis.mapper" />  
+    </bean>  
+
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg index="0" ref="sqlSessionFactory" />
+	</bean>
+
+</beans>

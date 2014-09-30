@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- ●com.syntis.mapper 此package下的檔案，類似dao● -->
+<mapper namespace="com.syntis.mapper.CoreItemMapper">
+<!-- <![CDATA[ ＳＱＬ語句 ]]> 指的是不應由 XML 解析器進行解析的文本数据 -->
+	<select id="queryCoreItem" parameterType="com.syntis.bean.CoreItem" 
+		resultType="com.syntis.bean.CoreItem">
+		<![CDATA[ SELECT 
+		SYSID as sysid, OPERATOR as operator, OPERATIONDATE as operationdate,CREATOR as creator,CREATIONDATE as creationdate,REMARK as remark,
+		ITEM_ID as dataId, ITEM_NAME as name,SPECIFICATION as specification,ITEM_TYPE_SYSID as itemTypeSysid
+		FROM core_item ]]>
+	</select>
+</mapper>
