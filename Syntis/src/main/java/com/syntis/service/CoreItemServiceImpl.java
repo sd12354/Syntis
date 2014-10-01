@@ -1,6 +1,7 @@
 package com.syntis.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +18,11 @@ public class CoreItemServiceImpl implements CoreItemService {
 	public List<CoreItem> queryCoreItem() {
 		System.out.println("@serviceImpl");
 		return this.coreItemMapper.queryCoreItem();
+	}
+
+	@Override
+	public List<Map<String,Integer>> queryCountForCharts() {
+		return this.coreItemMapper.queryTypeCount();
 	}
 
 }

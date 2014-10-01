@@ -1,6 +1,8 @@
 package com.syntis.controller;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.syntis.bean.CoreItem;
 import com.syntis.service.CoreItemService;
+import com.syntis.util.Util;
 
 @Controller
 @RequestMapping("/coreitem")
@@ -26,6 +29,19 @@ public class CoreItemController {
 		List<CoreItem> list = coreItemService.queryCoreItem();
 		return list;
 	}
+	@RequestMapping("/dataCharts")
+	@ResponseBody
+	public List<Map<String,Integer>> getDataCountForCharts(){
+		System.out.println("@controller: getDataCountForCharts");
+		// key為item type name，value為count(*)
+		List<Map<String,Integer>> list = coreItemService.queryCountForCharts();
+//		for (Object obj:list) {
+//			Util.printBean(obj);
+//		}
+		return list;
+	}
+	
+	
 	@RequestMapping("/layout")
     public String getItemPartialPage() {
 		System.out.println("just want to forward to item.jsp");
