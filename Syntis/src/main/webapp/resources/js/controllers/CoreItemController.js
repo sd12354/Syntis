@@ -1,10 +1,52 @@
 'use strict';
 function CoreItemController($scope, $http) {
-	console.log('----------itemcontroller.js----------');
-	    $scope.fetchItemList = function() {
-	        $http.get('getall').success(function(itemList){
-	            $scope.items = itemList;
-	        });
-	    };
-	    $scope.fetchItemList();
+	$scope.fetchItemList = function() {
+		$http.get('getItems').success(function(itemList) {
+			$scope.items = itemList;
+		});
 	};
+	$scope.fetchItemList();
+	// draw charts
+	$scope.charts = function(chartType) {
+		$http.post('dataCharts/' + chartType).success(function(data) {
+			if (chartType != 'line') {
+				var chart = c3.generate({
+					data : {
+						bindto : '#chart',
+						columns : data,
+						type : chartType,
+						onclick : function(d, i) {
+							console.log("onclick", d, i);
+						},
+						onmouseover : function(d, i) {
+							console.log("onmouseover", d, i);
+						},
+						onmouseout : function(d, i) {
+							console.log("onmouseout", d, i);
+						}
+					},
+					donut : {
+						title : "inner"
+					}
+				});
+			} else if (chartType === 'line') {
+				var chart = c3.generate({
+					bindto : '#chart',
+					data : {
+						json : data,
+						keys : {
+							x : 'itemTypeName', // it's possible to specify 'x' when category axis
+							value : [ 'count' ],
+						}
+					},
+					axis : {
+						x : {
+							type : 'category'
+						}
+					}
+				});
+			}
+		});
+	}
+
+};

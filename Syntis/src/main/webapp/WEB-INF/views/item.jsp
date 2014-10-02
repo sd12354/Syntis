@@ -9,6 +9,10 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>-->
 </head>
 <body>
+<button type="button" ng-click="charts('line')" ng-controller="CoreItemController" class="btn btn-warning">draw line</button>
+<button type="button" ng-click="charts('pie')" ng-controller="CoreItemController" class="btn btn-warning">draw pie</button>
+<button type="button" ng-click="charts('donut')" ng-controller="CoreItemController" class="btn btn-warning">draw donut</button>
+<div id="chart"></div>
 <h3>Item List</h3>
 <table class="table table-bordered table-striped" style="width:450px; margin-left: 100px;" ng-controller="CoreItemController">
     <thead>

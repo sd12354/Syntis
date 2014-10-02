@@ -1,10 +1,12 @@
 package com.syntis.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.junit.runners.Parameterized.Parameters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,23 +24,39 @@ public class CoreItemController {
 	@Autowired
 	private CoreItemService coreItemService;
 	 
-	@RequestMapping("/getall")
+	@RequestMapping("/getItems")
 	@ResponseBody
 	public List<CoreItem> findItems(){
 		System.out.println("@controller: findItems, @ResponseBody: json");
 		List<CoreItem> list = coreItemService.queryCoreItem();
 		return list;
 	}
-	@RequestMapping("/dataCharts")
+	/**
+	 * draw charts with c3.js
+	 * @param chartType : pie, donut, line
+	 * @return
+	 */
+	@RequestMapping(value="/dataCharts/{chartType}", method=RequestMethod.POST)
 	@ResponseBody
-	public List<Map<String,Integer>> getDataCountForCharts(){
+	public List<Object> getDataCountForCharts(@PathVariable String chartType){
 		System.out.println("@controller: getDataCountForCharts");
 		// key為item type name，value為count(*)
-		List<Map<String,Integer>> list = coreItemService.queryCountForCharts();
-//		for (Object obj:list) {
-//			Util.printBean(obj);
-//		}
-		return list;
+		List<Map<String, Integer>> querylist = coreItemService.queryCountForCharts();
+		if(!chartType.equals("line")){
+			// 資料格式[["前下巴",2],["後下巴",3],["後擾流",5],["配件",7],["避震器",3]]
+			List<Object> arraylist = new ArrayList<Object>();// List<List<Object>>
+			List<Object> datalist = null;
+			for (Map<String, Integer> map : querylist) {
+				datalist = new ArrayList<Object>(map.values());
+				arraylist.add(datalist);
+			}
+			return arraylist;
+		}else{
+			// 資料格式[{"itemTypeName":"前下巴","count":2},{"itemTypeName":"後下巴","count":3},{"itemTypeName":"後擾流","count":5}]
+			List<Object> converterlist = new ArrayList<Object>();
+			converterlist.addAll(querylist);
+			return converterlist;
+		}
 	}
 	
 	
@@ -54,7 +72,7 @@ public class CoreItemController {
 		//印五次 test for rex [http://localhost:8080/Spatis/item/find2/5.ok]
 		List<CoreItem> list = coreItemService.queryCoreItem();
 		for (CoreItem bean : list) {
-			System.out.println(ToStringBuilder.reflectionToString(bean));
+			Util.printBean(bean);
 		}
 		int times = 0;
 		while (times < frequency) {

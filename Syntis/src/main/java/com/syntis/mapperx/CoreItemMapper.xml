@@ -23,5 +23,11 @@
 					ON ITEM.ITEM_TYPE_SYSID = TYPE.SYSID 
 					GROUP BY ITEM.ITEM_TYPE_SYSID ]]>
 	</select>
-
+<!-- SELECT 
+    item.SYSID, item.ITEM_NAME as itemName, bsoi.QUANTITY as q, bsoi.UNIT_PRICE as price ,(select q*price) as amt
+FROM
+    CORE_ITEM AS ITEM
+        LEFT JOIN
+    bill_sales_order_item AS bsoi ON ITEM.SYSID = bsoi.ITEM_SYSID
+where bsoi.CREATIONDATE like '%2014/03/07%' -->
 </mapper>
