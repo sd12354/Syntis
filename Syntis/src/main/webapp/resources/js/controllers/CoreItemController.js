@@ -16,13 +16,8 @@ function CoreItemController($scope, $http) {
 						columns : data,
 						type : chartType,
 						onclick : function(d, i) {
-							console.log("onclick", d, i);
-						},
-						onmouseover : function(d, i) {
-							console.log("onmouseover", d, i);
-						},
-						onmouseout : function(d, i) {
-							console.log("onmouseout", d, i);
+							$('#description').remove();
+						 $('#chart').prepend('<span id="description" style="color:red;"><b>value: '+d.value+'</b></span>');
 						}
 					},
 					donut : {

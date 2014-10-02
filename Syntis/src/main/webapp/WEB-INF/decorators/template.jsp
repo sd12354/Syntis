@@ -38,7 +38,7 @@
 					</header>
 					<div class="main clearfix">
 						<div class="column">
-							<p><button id="showMenu">Show Menu</button></p>
+							<p><button id="showMenu" class="btn btn-danger">Show Menu</button></p>
 							<p>Click on this button to see the content being pushed away in 3D to reveal a navigation or other items.</p>
 						</div>
 					</div><!-- /main -->
