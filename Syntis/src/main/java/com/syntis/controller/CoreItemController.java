@@ -3,10 +3,7 @@ package com.syntis.controller;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.junit.runners.Parameterized.Parameters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +16,7 @@ import com.syntis.service.CoreItemService;
 import com.syntis.util.Util;
 
 @Controller
-@RequestMapping("/coreitem")
+@RequestMapping("/{template}_coreitem")
 public class CoreItemController {
 	@Autowired
 	private CoreItemService coreItemService;
@@ -61,9 +58,9 @@ public class CoreItemController {
 	
 	
 	@RequestMapping("/layout")
-    public String getItemPartialPage() {
+    public String getItemPartialPage(@PathVariable String template) {
 		System.out.println("just want to forward to item.jsp");
-        return "item";
+        return template + "/item";
     }
 	
 	
