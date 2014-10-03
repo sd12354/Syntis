@@ -77,7 +77,8 @@ body{
 /** Logo **/
 .logo{
 	padding:80px 20px 20px;
-	background:#7CDD4E url(../images/quotes.png) no-repeat 170px -32px;
+	background:#7CDD4E;
+	/* url(../images/quotes.png) no-repeat 170px -32px */
 }
 .logo hr{
 	display: inline-block;

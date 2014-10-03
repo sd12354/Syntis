@@ -16,8 +16,7 @@ function CoreItemController($scope, $http) {
 						columns : data,
 						type : chartType,
 						onclick : function(d, i) {
-							$('#description').remove();
-						 $('#chart').prepend('<span id="description" style="color:red;"><b>value: '+d.value+'</b></span>');
+							$('#DATA-VALUE').text(d.value);
 						}
 					},
 					donut : {

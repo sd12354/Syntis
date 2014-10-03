@@ -11,6 +11,7 @@
 <sitemesh:write property="head" />
 </head>
 <body>
+
 	<div class="profile">
 		<div class="profile-img">
 			<img src="${pageContext.request.contextPath}/resources/template/coverme//images/cover-page.jpg" alt="logo" />
