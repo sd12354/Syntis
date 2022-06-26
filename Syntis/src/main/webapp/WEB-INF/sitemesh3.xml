@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sitemesh>
- <!-- <mapping path="/*" decorator="/WEB-INF/decorators/template.jsp"/> -->
- <mapping path="/perspective_*" decorator="/WEB-INF/decorators/perspective.jsp"/>
- <mapping path="/coverme_*" decorator="/WEB-INF/decorators/coverme.jsp"/>
- <mapping path="*/login.jsp" exclue="true"/>
-</sitemesh>
