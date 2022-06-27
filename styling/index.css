@@ -12,7 +12,7 @@ body {
   background-color:  #21283c;
   margin: 0px;
   padding: 0px;
-  height: 2250px;
+  height: 2200px;
 }
 html {
   scroll-behavior: smooth;
@@ -48,8 +48,9 @@ html {
   color: white;
   border: none;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
   padding: 15px;
+  width: 150px;
   font-weight: bolder;
 }
 .right button:hover {
@@ -144,11 +145,14 @@ a {
 
 
 .footer {
-  background-color: #ffffff;
-  height: 375px;
+  background-color:#374365;
+  height: 150px;
   width: 100vw;
   position: relative;
-  bottom: 0px;
+  bottom: -1400px;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .smallTxt {
@@ -175,12 +179,48 @@ ion-icon {
 }
 .careers {
   background-color: #374365;
-  height: 400px;
+  height: fit-content;
   position: relative;
   top: -445px;
   padding-top: 15px;
+  padding: 15px;
   text-align: center;
   color: white;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.careers p {
+  font-size: 1.75rem;
+  text-align: center;
+  padding-top: 0px;
+}
+.careers img {
+  width: 500px;
+  height: 350px;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  animation-name: floating; 
+  animation-duration: 3s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out; 
+  color: white;
+}
+
+@keyframes floating { 
+  0% { transform: translate(0,  0px); } 
+  50%  { transform: translate(0, 15px); } 
+  100%   { transform: translate(0, -0px); }     
+} 
+
+.footer p {
+  color: #21283c;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
