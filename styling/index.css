@@ -1,0 +1,186 @@
+@font-face {
+	font-family: 'Rounded Elegance';
+	src: url('RoundedElegance-Regular.eot');
+	src: local('Rounded Elegance'), local('RoundedElegance-Regular'),
+		url('RoundedElegance-Regular.eot?#iefix') format('embedded-opentype'),
+		url('RoundedElegance-Regular.woff') format('woff'),
+		url('RoundedElegance-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+  background-color:  #21283c;
+  margin: 0px;
+  padding: 0px;
+  height: 2250px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.top {
+  background-color: #283149;
+  width: 100vw;
+  height: 13vh;
+  top: 0px;
+  position: sticky;
+  z-index: 2;
+}
+.left {
+  left: 10px;
+}
+.logo {
+  padding: 15px;
+  left: 0px;
+  position: relative;
+  width: 13vw;
+
+}
+.right {
+  right: 0px;
+  float: right;
+  padding: 15px;
+  position: absolute;
+  top: 6px;
+}
+.right button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.4rem;
+  padding: 15px;
+  font-weight: bolder;
+}
+.right button:hover {
+  border-bottom: #FC70AF solid 2px;
+}
+.center {
+background-image: url(/assets/jpg/center.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-filter: blur(5px);
+height: 700px;
+}
+h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: white;
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 350px;
+  z-index: 1;
+  position: relative;
+  top: -800px;
+}
+.about-us {
+  background-color: #ffffff;
+  height: 180px;
+  width: 100vw;
+  top: -400px;
+  position: relative;
+}
+.about-us h2 {
+  padding: 40px;
+  text-align: center;
+  color:#21283c;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+}
+.items {
+  background-color:#283149;
+  height: 250px;
+  border-radius: 25px;
+  border: 10px solid #21283c;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.items:hover {
+  background-color: #374365;
+}
+.team {
+  position: relative;
+  width: 100vw;
+  height: 700px;
+  top: -400px;
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-align: center;
+}
+.team h2 {
+  font-size: 2.5rem;
+  padding: 40px;
+}
+a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: transparent;
+  padding: 10px;
+}
+.grid-item {
+  background-color:#283149;
+  border-radius: 25px;
+  border: 10px solid #21283c;
+  padding: 25px;
+  height: fit-content;
+  font-size: 30px;
+  text-align: left;
+}
+
+
+.footer {
+  background-color: #ffffff;
+  height: 375px;
+  width: 100vw;
+  position: relative;
+  bottom: 0px;
+}
+
+.smallTxt {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+.founder {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.3rem;
+}
+ion-icon {
+  letter-spacing: 15px;
+  color: #FC70AF;
+  font-size: 2.5rem;
+  padding: 2px;
+  border-radius: 10px;
+  background-color: #fc70af73;
+  
+}
+.grid-item img {
+ width: 30%;
+ height: 30%;
+}
+.careers {
+  background-color: #374365;
+  height: 400px;
+  position: relative;
+  top: -445px;
+  padding-top: 15px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
