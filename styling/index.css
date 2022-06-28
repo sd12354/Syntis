@@ -3,7 +3,7 @@ body {
   background-color:  #21283c;
   margin: 0px;
   padding: 0px;
-  height: 2200px;
+  height: 2000px;
   overflow-x: hidden;
 }
 html {
@@ -134,14 +134,15 @@ a {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   background-color: transparent;
   padding: 10px;
 }
 .grid-item {
   background-color:#283149;
+  justify-content: center;
   border-radius: 25px;
-  border: 10px solid #21283c;
+  border: 0px solid #21283c;
   padding: 25px;
   height: fit-content;
   font-size: 30px;
@@ -155,7 +156,18 @@ a {
 .grid-item:hover {
   background-color:#303b5b;
 }
-
+.grid-item button {
+  color: white;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  right: 290px;
+  font-size: 1.25rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+  background-image: url(/assets/svg/chevron-down.svg);
+}
 .footer {
   background-color:#374365;
   height: 150px;
@@ -168,13 +180,14 @@ a {
 }
 
 .smallTxt {
+  padding-top: 90px;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 1rem;
   text-align: left;
 }
 .founder {
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 ion-icon {
   letter-spacing: 15px;
@@ -186,8 +199,15 @@ ion-icon {
   
 }
 .grid-item img {
- width: 30%;
- height: 30%;
+ width: 40%;
+ left: -50px;
+ height: 0%;
+ border-radius: 75px;
+ position: relative;
+ justify-content: left;
+}
+.grid-item p {
+  font-size: 1.3rem;
 }
 .careers {
   background-color: #374365;
@@ -288,4 +308,24 @@ ion-icon {
   .image-container {
     grid-template-columns: auto;
   }
+}
+.grid-item button {
+  background-color:#283149;
+  border: none;
+  position: relative;
+  bottom: -190px;
+  left: -10px;
+
+}
+.grid-item button:hover {
+
+}
+.grid-item ion-icon {
+  background-color: transparent;
+  color: white;
+}
+.bio {
+  position: relative;
+  bottom: -320px;
+  font-size: 1.25rem;
 }
