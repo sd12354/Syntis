@@ -1,21 +1,17 @@
-@font-face {
-	font-family: 'Rounded Elegance';
-	src: url('RoundedElegance-Regular.eot');
-	src: local('Rounded Elegance'), local('RoundedElegance-Regular'),
-		url('RoundedElegance-Regular.eot?#iefix') format('embedded-opentype'),
-		url('RoundedElegance-Regular.woff') format('woff'),
-		url('RoundedElegance-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+
 body {
   background-color:  #21283c;
   margin: 0px;
   padding: 0px;
   height: 2200px;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .top {
@@ -24,16 +20,16 @@ html {
   height: 13vh;
   top: 0px;
   position: sticky;
-  z-index: 2;
+  z-index: 5;
 }
 .left {
   left: 10px;
 }
 .logo {
-  padding: 15px;
+  padding: 20px;
   left: 0px;
   position: relative;
-  width: 13vw;
+  height: 8vh;
 
 }
 .right {
@@ -48,7 +44,7 @@ html {
   color: white;
   border: none;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   padding: 15px;
   width: 150px;
   font-weight: bolder;
@@ -70,7 +66,7 @@ h1 {
   justify-content: center;
   justify-self: center;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3.75rem;
   padding-top: 350px;
   z-index: 1;
   position: relative;
@@ -78,10 +74,14 @@ h1 {
 }
 .about-us {
   background-color: #ffffff;
-  height: 180px;
+  height: 700px;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
   width: 100vw;
   top: -400px;
   position: relative;
+  padding-bottom: 80px;
 }
 .about-us h2 {
   padding: 40px;
@@ -90,6 +90,11 @@ h1 {
   font-size: 2.5rem;
   font-weight: 900;
   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.about-us p {
+  text-align: center;
+  justify-content: center;
+  position: relative;
 }
 .row {
   display: grid;
@@ -119,7 +124,7 @@ h1 {
   text-align: center;
 }
 .team h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 40px;
 }
 a {
@@ -141,8 +146,15 @@ a {
   height: fit-content;
   font-size: 30px;
   text-align: left;
+  border-left: #ffffff  10px;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: white;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
 }
-
+.grid-item:hover {
+  background-color:#303b5b;
+}
 
 .footer {
   background-color:#374365;
@@ -179,11 +191,11 @@ ion-icon {
 }
 .careers {
   background-color: #374365;
-  height: fit-content;
+  height: 1200px;
   position: relative;
   top: -445px;
-  padding-top: 15px;
-  padding: 15px;
+  padding-top: 0px;
+  padding: 40px;
   text-align: center;
   color: white;
   align-items: center;
@@ -193,29 +205,23 @@ ion-icon {
 }
 
 .careers p {
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   text-align: center;
-  padding-top: 0px;
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  top: 1000px;
 }
 .careers img {
-  width: 500px;
-  height: 350px;
+  height: 20%;;
   position: relative;
   padding: 0px;
   margin: 0px;
+  width: auto;
   justify-content: center;
-  animation-name: floating; 
-  animation-duration: 3s; 
-  animation-iteration-count: infinite; 
-  animation-timing-function: ease-in-out; 
-  color: white;
 }
 
-@keyframes floating { 
-  0% { transform: translate(0,  0px); } 
-  50%  { transform: translate(0, 15px); } 
-  100%   { transform: translate(0, -0px); }     
-} 
+
 
 .footer p {
   color: #21283c;
@@ -223,4 +229,63 @@ ion-icon {
   text-align: center;
   padding-top: 50px;
   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.footer a:hover {
+  color: #FC70AF;
+}
+
+.image-container {
+  position: relative;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 15px;
+}
+.image-container img {
+  width: fit-content;
+  border-left: #ffffff  10px;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: white;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+.mobile {
+  display: none;
+  background-color: transparent;
+  right: 0px;
+  float: right;
+  padding: 15px;
+  position: fixed;
+  top: 10px;
+}
+.mobile button {
+  background-color: transparent;
+  border: none;
+  padding: auto;
+}
+.mobile ion-icon {
+  font-size: 2rem;
+  background-color: transparent;
+}
+.dropdown a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 980px) {
+  .right button {
+    display: none;
+
+  }
+  .mobile {
+    display: block;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    padding: 50px;
+  }
+  .careers {
+    height: 1400px;
+  }
+  .image-container {
+    grid-template-columns: auto;
+  }
 }
