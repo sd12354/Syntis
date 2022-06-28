@@ -52,7 +52,7 @@
   </div>
   <div class="center" id="home">
   </div>
-  <h1>A New Class of Therapy</h1>
+  <h1 class="topTxt"></h1>
 <div class="about-us">
   <h2>A Platform For Global Health and Security</h2>
   <img src="/assets/png/world.png" alt="">
@@ -71,15 +71,6 @@
 </div>
 <div class="about-txt">
   <p>Syntis Bio is developing a new class of therapy to address critical diseases affecting millions of patients worldwide. Through novel formulations for oral therapies and targeting specific tissues, we are developing solutions that combine fewer doses, increased bioavailabity and higher efficacy to treat conditions affecting hundreds of millions of patients worldwide. 
-  </p>
-</div>
-<div class="careers" id="aboutus">
-  <h3>Careers</h3>
-  <div class="image-container">
-    <img src="/assets/jpg/career1.jpg" alt="">
-    <img src="/assets/jpg/career3.jpg" alt="">
-  </div>
-  <p>Syntis Bio is hiring. Our company is committed to equity, excellence, and diversity, and we are building a culture that supports its team to grow, take risks, and achieve individual goals. We have broad needs across all functions, including drug formulation, pre-clinical and clinical drug development, and business development. If you want to help build the best team in the industry and have relevant expertise, please contact us at [email]
   </p>
 </div>
 <div class="team" id="theteam">
@@ -101,8 +92,8 @@
         Rahul earned his MBA from MIT’s Sloan School of Management and his B.A. from Wesleyan University. He is a former committee member of the AAAS Committee on Scientific Freedom and Responsibility. Mr. Dhanda is the author of several publications, an inventor on numerous patents, and has authored the first book to address the crossroads between industry and bioethics/public policy, entitled Guiding Icarus: Merging Bioethics with Corporate Interests.
         </p>
     </div>
-    <div class="grid-item">
-      <button onclick="document.getElementById('gioBio').style.display = 'none'"></button>
+    <div class="grid-item" id="gio">
+      <button id="gio" onclick="minimize(this.id)"></button>
       <img src="/assets/jpg/GiovanniTraverso.png" alt="">
       <p>Giovanni Traverso, MB, BChir, PhD</p>
       <p class="founder">Chair Clin. Advisory Board, Director</p>
@@ -134,11 +125,20 @@
         elected to the National Academy of Medicine, the National Academy of Engineering, the National
         Academy of Sciences and the National Academy of Inventors.</p>
     </div>
-    <div class="grid-item">4</div>
+    <!-- <div class="grid-item">4</div>
     <div class="grid-item">5</div>
     <div class="grid-item">6</div>
     <div class="grid-item">7</div>
+  </div> -->
+</div>
+<div class="careers" id="aboutus">
+  <h3>Careers</h3>
+  <div class="image-container">
+    <img src="/assets/jpg/career1.jpg" alt="">
+    <img src="/assets/jpg/career3.jpg" alt="">
   </div>
+  <p>Syntis Bio is hiring. Our company is committed to equity, excellence, and diversity, and we are building a culture that supports its team to grow, take risks, and achieve individual goals. We have broad needs across all functions, including drug formulation, pre-clinical and clinical drug development, and business development. If you want to help build the best team in the industry and have relevant expertise, please contact us at [email]
+  </p>
 </div>
 <div class="footer">
   <p><a href="">© 2022 Syntis Bio</a></p>
@@ -147,4 +147,5 @@
   <p><a href="">Number</a></p>
 </div>
 </body>
+<script src="script.js"></script>
 </html>

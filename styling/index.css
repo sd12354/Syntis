@@ -3,7 +3,7 @@ body {
   background-color:  #21283c;
   margin: 0px;
   padding: 0px;
-  height: 2000px;
+  height: fit-content;
   overflow-x: hidden;
 }
 html {
@@ -17,7 +17,7 @@ html {
 .top {
   background-color: #283149;
   width: 100vw;
-  height: 13vh;
+  height: 100px;
   top: 0px;
   position: sticky;
   z-index: 5;
@@ -74,7 +74,7 @@ h1 {
 }
 .about-us {
   background-color: #ffffff;
-  height: 700px;
+  height: 800px;
   justify-content: center;
   text-align: center;
   padding: 40px;
@@ -117,8 +117,9 @@ h1 {
 .team {
   position: relative;
   width: 100vw;
-  height: 700px;
-  top: -400px;
+  height: fit-content;
+  top: -600px;
+  padding: auto;
   color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
@@ -137,6 +138,7 @@ a {
   grid-template-columns: auto auto auto;
   background-color: transparent;
   padding: 10px;
+  padding-bottom: 40px;
 }
 .grid-item {
   background-color:#283149;
@@ -144,6 +146,7 @@ a {
   border-radius: 25px;
   border: 0px solid #21283c;
   padding: 25px;
+  min-height: 350px;
   height: fit-content;
   font-size: 30px;
   text-align: left;
@@ -162,19 +165,21 @@ a {
   height: 50px;
   width: 50px;
   right: 290px;
+  background-color: transparent;
   font-size: 1.25rem;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
   background-image: url(/assets/svg/chevron-down.svg);
 }
+
 .footer {
   background-color:#374365;
   height: 150px;
   width: 100vw;
-  position: relative;
-  bottom: -1400px;
-  z-index: -1;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
@@ -211,16 +216,17 @@ ion-icon {
 }
 .careers {
   background-color: #374365;
-  height: 1200px;
+  height: fit-content;
+  max-height: 800px;
   position: relative;
-  top: -445px;
+  top: 0px;
   padding-top: 0px;
   padding: 40px;
   text-align: center;
   color: white;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -229,8 +235,8 @@ ion-icon {
   text-align: center;
   margin: auto;
   padding: 20px;
-  position: absolute;
-  top: 1000px;
+  position: relative;
+  top: 0px;
 }
 .careers img {
   height: 20%;;
@@ -328,4 +334,18 @@ ion-icon {
   position: relative;
   bottom: -320px;
   font-size: 1.25rem;
+}
+.about-txt {
+  position: relative;
+  color:#283149;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.5rem;
+  top: -600px;
+}
+
+.typed-cursor {
+  color: #FC70AF;
+  width: 2px;
 }
