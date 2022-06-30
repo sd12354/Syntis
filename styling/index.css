@@ -203,10 +203,10 @@ a {
 
 .footer {
   background-color:#374365;
-  height: 150px;
+  height: 250px;
   width: 100vw;
   position: relative;
-  bottom: -1400px;
+  bottom: -400px;
   z-index: 1;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -279,10 +279,11 @@ ion-icon {
 
 
 .footer p {
+  font-size: 1.2rem;
   color: #21283c;
   justify-content: center;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 90px;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .footer a:hover {
@@ -329,9 +330,6 @@ ion-icon {
 @media only screen and (max-width: 980px) {
   html, body {
     overflow-x: hidden;
-  }
-  body {
-    position: relative
   }
   .right button {
     display: none;
