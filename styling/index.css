@@ -329,7 +329,6 @@ ion-icon {
 @media only screen and (max-width: 980px) {
   .right button {
     display: none;
-
   }
   .mobile {
     display: block;
@@ -339,7 +338,7 @@ ion-icon {
     padding: 50px;
   }
   .careers {
-    height: 1400px;
+    height: 1800px;
   }
   .image-container {
     grid-template-columns: auto;
