@@ -12,8 +12,8 @@ function minimize(clickID) {
 }
 
 var typed = new Typed('.topTxt', {
-  strings: ["A New Class of Threapy"],
-  typeSpeed: 50,
+  strings: ["A New Class of Therapy"],
+  typeSpeed: 60,
   showCursor: true,
   cursorChar: '|',
   autoInsertCss: true,
