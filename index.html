@@ -34,7 +34,8 @@
 <link href="https://www.dafontfree.net/embed/cm91bmRlZC1lbGVnYW5jZS1yZWd1bGFyJmRhdGEvMTUvci82OTE5MS9Sb3VuZGVkIEVsZWdhbmNlLnR0Zg" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <div class="top">
+  <button class="up"><a href="#top"><ion-icon name="chevron-up-circle"></ion-icon></a></button>
+  <div class="top" id="top">
     <div class="left">
       <img class="logo"src="/assets/svg/Color logo - no background.svg" draggable="false" alt="">
     </div>
@@ -77,7 +78,7 @@
   <h2>Meet The Founders </h2>
   <div class="grid-container">
     <div class="grid-item">
-      <button onclick="document.getElementById('rahulBio').style.display = 'none'"></button>
+      <button id="rahul" onclick="minimize(this.id)"></button>
       <img src="/assets/jpg/RahulDhanda.png" alt="">
       <p>Rahul Dhanda</p>
       <p class="founder">CEO, President, Director</p>
@@ -103,7 +104,7 @@
         Dr. Traverso is a co-founder of Lyndra Therapeutics, Vivtex, Suono Bio, Celero Systems, Bilayer Therapeutics, Teal Bio.  He is also a co-founder of Project Prana, a not-for-profit focused on education and deployment of systems capable of expanding ventilator support globally in the setting of the COVID-19 pandemic.</p>
     </div>
     <div class="grid-item">
-      <button onclick="document.getElementById('bobBio').style.display = 'none'"></button>
+      <button id="bob" onclick="minimize(this.id)"></button>
       <img src="/assets/jpg/BobLagner.png" alt="">
       <p>Robert Langer, Sc.D.</p>
       <p class="founder">Chair Sci. Advisory Board, Director</p>
@@ -134,8 +135,8 @@
 <div class="careers" id="aboutus">
   <h3>Careers</h3>
   <div class="image-container">
-    <img src="/assets/jpg/career1.jpg" alt="">
-    <img src="/assets/jpg/career3.jpg" alt="">
+    <img class="career1" src="/assets/jpg/career1.jpg" alt="">
+    <img class="career2" src="/assets/jpg/career3.jpg" alt="">
   </div>
   <p>Syntis Bio is hiring. Our company is committed to equity, excellence, and diversity, and we are building a culture that supports its team to grow, take risks, and achieve individual goals. We have broad needs across all functions, including drug formulation, pre-clinical and clinical drug development, and business development. If you want to help build the best team in the industry and have relevant expertise, please contact us at [email]
   </p>

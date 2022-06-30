@@ -1,10 +1,23 @@
-
 body {
   background-color:  #21283c;
   margin: 0px;
   padding: 0px;
-  height: fit-content;
+  height: 0px;
   overflow-x: hidden;
+  justify-content: center;
+}
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(124, 124, 124, 0.534);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FC70AF;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #FC70AF;  /* creates padding around scroll thumb */
 }
 html {
   scroll-behavior: smooth;
@@ -17,19 +30,35 @@ html {
 .top {
   background-color: #283149;
   width: 100vw;
-  height: 100px;
+  height: 110px;
   top: 0px;
   position: sticky;
   z-index: 5;
+
 }
 .left {
   left: 10px;
+}
+.up {
+  background-color: transparent;
+  border: none;
+  float: right;
+  padding: 20px;
+  position: sticky;
+  bottom: auto;
+}
+.up ion-icon {
+  background-color: white;
+  border-radius: 75px;
+  font-size: 4rem;
 }
 .logo {
   padding: 20px;
   left: 0px;
   position: relative;
   height: 8vh;
+  max-height: 65px;
+  min-height: 50px;;
 
 }
 .right {
@@ -74,10 +103,10 @@ h1 {
 }
 .about-us {
   background-color: #ffffff;
-  height: 800px;
+  height: 850px;
   justify-content: center;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   width: 100vw;
   top: -400px;
   position: relative;
@@ -138,7 +167,7 @@ a {
   grid-template-columns: auto auto auto;
   background-color: transparent;
   padding: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 .grid-item {
   background-color:#283149;
@@ -146,7 +175,7 @@ a {
   border-radius: 25px;
   border: 0px solid #21283c;
   padding: 25px;
-  min-height: 350px;
+  min-height: 500px;
   height: fit-content;
   font-size: 30px;
   text-align: left;
@@ -154,7 +183,7 @@ a {
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
   color: white;
   box-shadow: 20px 20px rgba(0,0,0,.15);
-  transition: all .4s ease;
+  transition: all .4s e;
 }
 .grid-item:hover {
   background-color:#303b5b;
@@ -167,9 +196,8 @@ a {
   right: 290px;
   background-color: transparent;
   font-size: 1.25rem;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+
+  background-color: #283149;
   background-image: url(/assets/svg/chevron-down.svg);
 }
 
@@ -177,8 +205,8 @@ background-size: cover;
   background-color:#374365;
   height: 150px;
   width: 100vw;
-  position: absolute;
-  bottom: 0px;
+  position: relative;
+  bottom: -1400px;
   z-index: 1;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -217,7 +245,8 @@ ion-icon {
 .careers {
   background-color: #374365;
   height: fit-content;
-  max-height: 800px;
+  min-height: 1100px;
+  max-height: 00px;
   position: relative;
   top: 0px;
   padding-top: 0px;
@@ -235,8 +264,8 @@ ion-icon {
   text-align: center;
   margin: auto;
   padding: 20px;
-  position: relative;
-  top: 0px;
+  position: absolute;
+  top: 950px;
 }
 .careers img {
   height: 20%;;
@@ -266,6 +295,7 @@ ion-icon {
   display: grid;
   grid-template-columns: auto auto;
   padding: 15px;
+  height: 50px;
 }
 .image-container img {
   width: fit-content;
@@ -314,6 +344,12 @@ ion-icon {
   .image-container {
     grid-template-columns: auto;
   }
+  .career2 {
+    display: none;
+  }
+  .about-us img {
+    width: 650px;
+  }
 }
 .grid-item button {
   background-color:#283149;
@@ -348,4 +384,7 @@ ion-icon {
 .typed-cursor {
   color: #FC70AF;
   width: 2px;
+}
+svg:hover {
+  background-color: #303b5b;
 }
