@@ -9,7 +9,9 @@ body {
 body::-webkit-scrollbar {
   width: 8px;               /* width of the entire scrollbar */
 }
-
+button {
+  outline: none;
+}
 body::-webkit-scrollbar-track {
   background: rgba(124, 124, 124, 0.534);        /* color of the tracking area */
 }
@@ -37,7 +39,10 @@ html {
 
 }
 .topTxt {
-  color: #FC70AF;
+  color:white;
+  font-weight: bold;
+	-webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color:#FC70AF;
 }
 .left {
   left: 10px;
@@ -56,7 +61,7 @@ html {
   font-size: 4rem;
 }
 .logo {
-  padding: 10px;
+  padding: 20px;
   left: 0px;
   position: relative;
   height: 8vh;
@@ -212,6 +217,7 @@ a {
   bottom: -400px;
   z-index: 1;
   display: grid;
+  text-align: center;
   grid-template-columns: auto auto auto auto;
 }
 
@@ -224,7 +230,7 @@ a {
 }
 .founder {
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 ion-icon {
   letter-spacing: 15px;
@@ -264,12 +270,12 @@ ion-icon {
 }
 
 .careers p {
-  font-size: 1.55rem;
+  font-size: 1.25rem;
   text-align: center;
   margin: auto;
   padding: 20px;
-  position: absolute;
-  top: 950px;
+  position: relative;
+  top: 750px;
 }
 .careers img {
   height: 20%;;
@@ -283,7 +289,7 @@ ion-icon {
 
 
 .footer p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #21283c;
   justify-content: center;
   text-align: center;
@@ -316,25 +322,24 @@ ion-icon {
   right: 0px;
   float: right;
   padding: 15px;
-  position: fixed;
+  position: absolute;
   top: 10px;
 }
 .mobile button {
   background-color: transparent;
   border: none;
   padding: auto;
+  padding-top: 10px;
 }
 .mobile ion-icon {
-  font-size: 2rem;
+  font-size: 1.7rem;
   background-color: transparent;
 }
 .dropdown a {
   text-decoration: none;
 }
 @media only screen and (max-width: 980px) {
-  html, body {
-    overflow-x: hidden;
-  }
+
   .right button {
     display: none;
   }
@@ -348,14 +353,33 @@ ion-icon {
   .careers {
     height: 1800px;
   }
+
   .image-container {
     grid-template-columns: auto;
   }
   .career2 {
     display: none;
   }
+  .about-txt {
+    background-color: white;
+  }
   .about-us img {
     width: 650px;
+  }
+  .footer {
+    padding-top: 40px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+  }
+  .footer p {
+    margin: 0px;
+    padding: 0px;
+  }
+  .careers {
+    padding-bottom: 180px;
+  }
+  .careers p {
+    padding-top: 0px;
   }
 }
 .grid-item button {
@@ -384,7 +408,7 @@ ion-icon {
   font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
   padding: 40px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   top: -600px;
 }
 
