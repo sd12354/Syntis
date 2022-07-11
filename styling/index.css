@@ -39,10 +39,11 @@ html {
 
 }
 .topTxt {
-  color:white;
+  color:whitesmoke;
   font-weight: bold;
+  font-size: 5rem;
 	-webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color:#FC70AF;
+    -webkit-text-stroke-color: white;
 }
 .left {
   left: 10px;
@@ -340,6 +341,12 @@ ion-icon {
 }
 @media only screen and (max-width: 980px) {
 
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
   .right button {
     display: none;
   }
@@ -390,9 +397,7 @@ ion-icon {
   left: -10px;
 
 }
-.grid-item button:hover {
 
-}
 .grid-item ion-icon {
   background-color: transparent;
   color: white;
