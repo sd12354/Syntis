@@ -2,25 +2,15 @@ body {
   background-color:  #21283c;
   margin: 0px;
   padding: 0px;
-  height: 0px;
+  height: 2000px;
   overflow-x: hidden;
   justify-content: center;
 }
-body::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
-}
+
 button {
   outline: none;
 }
-body::-webkit-scrollbar-track {
-  background: rgba(124, 124, 124, 0.534);        /* color of the tracking area */
-}
 
-body::-webkit-scrollbar-thumb {
-  background-color: #FC70AF;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #FC70AF;  /* creates padding around scroll thumb */
-}
 html {
   scroll-behavior: smooth;
   -webkit-user-select: none;
@@ -39,11 +29,13 @@ html {
 
 }
 .topTxt {
-  color:whitesmoke;
+  color: transparent;
   font-weight: bold;
+  top: -860px;
+  position: relative;
   font-size: 5rem;
 	-webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color:#FC70AF;
 }
 .left {
   left: 10px;
@@ -117,7 +109,7 @@ h1 {
   text-align: center;
   padding: 20px;
   width: 100vw;
-  top: -400px;
+  top: -700px;
   position: relative;
   padding-bottom: 80px;
 }
@@ -156,7 +148,7 @@ h1 {
   position: relative;
   width: 100vw;
   height: fit-content;
-  top: -600px;
+  top: -850px;
   padding: auto;
   color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -231,7 +223,7 @@ a {
 }
 .founder {
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 1rem;
+  font-size: .3rem;
 }
 ion-icon {
   letter-spacing: 15px;
@@ -330,7 +322,7 @@ ion-icon {
   background-color: transparent;
   border: none;
   padding: auto;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .mobile ion-icon {
   font-size: 1.7rem;
@@ -340,9 +332,31 @@ ion-icon {
   text-decoration: none;
 }
 @media only screen and (max-width: 980px) {
-
-  html, body {
-    overflow-x: hidden;
+  .about-us img {
+    width: 320px;
+    position: relative;
+    height: 280px;
+    left: -10px;
+  }
+  .global {
+    left: -20px;
+    position: relative;
+  }
+  .about-txt {
+    padding: 0px;
+    top: -100px;
+  }
+  .careers p {
+    padding-top: 0px;
+  }
+  body {
+    overflow-x:hidden;
+  }
+  .left {
+    width: 100%;
+  }
+  .logo {
+    width: 40%;
   }
   .right button {
     display: none;
@@ -353,24 +367,32 @@ ion-icon {
   .grid-container {
     grid-template-columns: auto;
     padding: 50px;
+    height: 150px;
   }
   .careers {
-    height: 1800px;
+    position: relative;
+    height: fit-content;
+    top: 900px;
   }
 
   .image-container {
     grid-template-columns: auto;
+  }
+  .image-container img{
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    padding: 10px;
   }
   .career2 {
     display: none;
   }
   .about-txt {
     background-color: white;
-  }
-  .about-us img {
-    width: 650px;
+    padding: 0px;
   }
   .footer {
+    top: 1900px;
     padding-top: 40px;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto;
@@ -380,10 +402,11 @@ ion-icon {
     padding: 0px;
   }
   .careers {
-    padding-bottom: 180px;
+    top:1500px;
+    padding-bottom: 0px;
   }
   .careers p {
-    padding-top: 0px;
+    top: 350px;
   }
 }
 .grid-item button {
@@ -392,7 +415,7 @@ ion-icon {
   position: relative;
   bottom: -190px;
   left: -10px;
-
+  cursor: pointer;
 }
 
 .grid-item ion-icon {
@@ -411,7 +434,7 @@ ion-icon {
   text-align: center;
   padding: 40px;
   font-size: 1.2rem;
-  top: -600px;
+  top: -950px;
 }
 
 .typed-cursor {
