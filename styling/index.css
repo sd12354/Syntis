@@ -29,13 +29,11 @@ html {
 
 }
 .topTxt {
-  color: transparent;
+  color:#FC70AF;
   font-weight: bold;
   top: -860px;
   position: relative;
   font-size: 5rem;
-	-webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color:#FC70AF;
 }
 .left {
   left: 10px;
