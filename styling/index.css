@@ -29,9 +29,9 @@ html {
 
 }
 .topTxt {
-  color:#FC70AF;
+  color:#ffffff;
   font-weight: bold;
-  top: -860px;
+  top: -900px;
   position: relative;
   font-size: 5rem;
 }
@@ -81,12 +81,11 @@ html {
   border-bottom: #FC70AF solid 2px;
 }
 .center {
-background-image: url(/assets/jpg/center.jpg);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
--webkit-filter: blur(5px);
-height: 700px;
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #283149, #FC70AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #283149, #FC70AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  height: 750px;
 }
 h1 {
   font-family: 'Plus Jakarta Sans', sans-serif;
