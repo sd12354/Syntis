@@ -194,9 +194,8 @@ a {
   right: 290px;
   background-color: transparent;
   font-size: 1.25rem;
-
   background-color: #283149;
-  background-image: url(/assets/svg/chevron-down.svg);
+  background-image: url(/assets/svg/add.svg);
 }
 
 .footer {

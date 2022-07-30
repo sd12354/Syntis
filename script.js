@@ -3,11 +3,12 @@ function minimize(clickID) {
   var paragraphID = clickID + "Bio";
   var text = document.getElementById(paragraphID)
   console.log(paragraphID)
-
   if (text.style.display === "none") {
     text.style.display = "block";
+    document.getElementById(clickID).style.backgroundImage = "url('/assets/svg/remove.svg')"
   } else {
     text.style.display = "none"
+    document.getElementById(clickID).style.backgroundImage = "url('/assets/svg/add.svg')"
   }
 }
 
