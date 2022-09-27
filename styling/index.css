@@ -414,6 +414,9 @@ ion-icon {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
   }
+  .partners img {
+    width: 200px;
+  }
 }
 .grid-item button {
   background-color:#283149;
