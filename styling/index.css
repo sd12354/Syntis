@@ -456,11 +456,11 @@ svg:hover {
 .partners {
   display: grid;
   padding: 100px;
-  height: 400px;
+  height: fit-content;
   background-color: #374365;
   position: relative;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: auto ;
+  grid-template-rows: auto auto auto auto;
   text-align: center;
   justify-content: center;
   margin: 0 auto;
