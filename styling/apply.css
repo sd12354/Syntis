@@ -113,3 +113,13 @@ a {
   visibility: hidden;
   animation: flow .5s ease-in-out ;
 }
+
+@media only screen and (max-width: 980px) {
+  .applications {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  h1 {
+    top: 25px;
+  }
+}
