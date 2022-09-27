@@ -33,7 +33,7 @@ html {
 .topTxt {
   color:#ffffff;
   font-weight: bold;
-  top: -900px;
+  top: -950px;
   position: relative;
   font-size: 5rem;
 }
@@ -107,7 +107,7 @@ h1 {
   text-align: center;
   padding: 20px;
   width: 100vw;
-  top: -750px;
+  top: -650px;
   position: relative;
   padding-bottom: 80px;
 }
