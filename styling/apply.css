@@ -77,3 +77,39 @@ a {
   text-align: center;
   position: relative;
 }
+.apps button {
+  color: white;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  right: 290px;
+  background-color: transparent;
+  font-size: 1.25rem;
+  background-color: #283149;
+  background-image: url(/assets/svg/add.svg);
+  border: none;
+  top: -65px;
+}
+.apps p {
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+#email {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 100px;
+  color: #FC70AF;
+}
+#scientistBio {
+  visibility: hidden;
+  animation: flow .5s ease-in-out ;
+}
+#researchBio {
+  visibility: hidden;
+  animation: flow .5s ease-in-out ;
+}

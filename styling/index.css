@@ -407,7 +407,6 @@ ion-icon {
   }
 
   .partners {
-    top: 400px;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
   }
@@ -454,8 +453,8 @@ svg:hover {
 
 .partners {
   display: grid;
-  padding: 150px;
-  height: 300px;
+  padding: 100px;
+  height: 400px;
   background-color: #374365;
   position: relative;
   grid-template-columns: auto auto;
@@ -464,8 +463,10 @@ svg:hover {
   justify-content: center;
   margin: 0 auto;
   place-items: center;
+  top: -110px;
   grid-row-gap: 40px;
   grid-column-gap: 40px;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
 }
 .partners img {
   padding: 16px;
@@ -476,7 +477,7 @@ svg:hover {
 }
 #partnersText {
   position: relative;
-  top: 120px;
+  top: -150px;
   font-size: 2rem;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }

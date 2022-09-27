@@ -34,17 +34,162 @@
 </head>
 <body>
   <a href="/index.html" id="back">Back Home</a>
-  <h1>Available Positions</h1>
+  <h1>Job Descriptions</h1>
+  <a href="mailto: careers@syntis.bio" id="email">careers@syntis.bio</a>
   <div class="applications">
     <div class="apps">
       <h1>Research Associate</h1>
-      <a href="/assets/docs/1_Research Associate.docx" download="Research Associate Application">Download Application</a>
+      <button id="research" onclick="minimize(this.id)"></button>
+      <p id="researchBio">
+        Research Associate
+        <br>
+        <br>
+The Role: Syntis Bio is seeking a Research Associate to aid in the development of formulations across several application
+targets. The Research Associate will execute experiments to optimize formulation function and stability. In addition, the
+Research Associate will support the in vivo and clinical teams, as well as partners. The role will involve clear
+communication, data interpretation, and presentation of technical data. The role is temporarily located in the Seaport
+area in Boston, MA with a permanent location in Boston, MA planned for 2023.
+<br>
+<br>
+The Responsibilities:
+<br>
+- Execute on assays and experiments regarding novel formulation stability and function.
+<br>
+- Propose new formulation strategies for optimal performance or stability.
+<br>
+- Develop understanding on how formulation affects various aspects of function.
+<br>
+- Interpret, analyze, present, and properly record data.
+<br>
+- Support general lab upkeep (receiving, labeling, and safely storing reagents, equipment maintenance etc.).
+<br>
+- Manage multiple experiments and maintain expertise in formulation parameters.
+<br>
+- Perform job related duties as assigned.
+<br>
+<br>
+The Ideal Skills:
+<br>
+- Bachelors degree in bioengineering, materials science, formulation sciences, pharmaceutical sciences, chemical
+engineering or other field with relevant experience.
+<br>
+- Experience working in a wet lab environment.
+<br>
+- Creating, following, and troubleshooting formulation and assay protocols.
+<br>
+- Experience working with drug formulations or other biomaterials.
+<br>
+- Proficient with stoichiometry, dilution calculations, and live Excel sheets.
+<br>
+- Strong written and oral communication skills for team projects.
+<br>
+<br>
+About Syntis Bio, Inc.
+Syntis Bio is a late stage, preclinical company developing a new class of therapy. Through novel formulations, we create
+both simple oral therapies and treatments that target specific tissues. Our platform offers better outcomes through
+fewer doses, increased bioavailability and higher efficacy to manage conditions affecting hundred of millions of patients
+all over the world.
+Syntis Bio is an equal opportunity employer that is committed to diversity and inclusion in the workplace. We prohibit
+discrimination and harassment of any kind based on race, color, sex, age, religion, sexual orientation, gender identity,
+national origin, disability, genetic information, pregnancy, or any other protected characteristic as outlined by applicable
+laws.
+<br>
+<br>
+Syntis Bio is pleased to offer:
+<br>
+- Medical, dental, and vision coverage options.
+<br>
+- Flexible time off.
+      </p>
     </div>
     <div class="apps">
-      <h1>Scientist</h1>
-      <a href="/assets/docs/0_Scientist.docx" download="Scientist Application">Download Application</a>
+      <h1>Scientist</h1> <button id="scientist" onclick="minimize(this.id)"></button>
+      <p id="scientistBio">Scientist I
+        <br>
+        <br>
+        The Role: Syntis Bio is seeking a Scientist to develop and optimize formulations of a platform technology for several
+        application targets. The Scientist will develop formulation-function relationships and optimize for various functional
+        outputs and stability. In addition, the Scientist will work with the regulatory, in vivo, and clinical teams, as well as
+        external partners. The role will involve clearly presenting technical information to both a technical audience and non-
+        technical audience. The role is temporarily located in the Seaport area in Boston, MA with a permanent location in
+        Boston, MA planned for 2023.
+        <br>
+        <br>
+        The Responsibilities:
+        <br>
+        - Build out composition space of formulation strategies.
+        <br>
+        - Propose new formulation strategies for optimal performance, production, or stability.
+        <br>
+        - Develop deep understanding on how formulation affects various aspects of function.
+        <br>
+        - Optimize or establish ex vivo tissue assays.
+        <br>
+        - Interpret, analyze, present, and properly record data.
+        <br>
+        - Support general lab upkeep (receiving, labeling, and safely storing reagents, etc.).
+        <br>
+        - Manage multiple projects and maintain expertise in formulation strategies for various targets.
+        <br>
+        - Apply broad drug delivery expertise to other projects and propose new formulation functions.
+        <br>
+        - Prepare documents and presentations that encompass project progression.
+        <br>
+        - Perform job related duties as assigned.
+        <br>
+        <br>
+        The Ideal Skills:
+        - PhD in bioengineering, materials science, formulation sciences, pharmaceutical sciences, chemical engineering
+        or equivalent relative experience.
+        - Comfortable with scientific ambiguity and has experience navigating it.
+        <br>
+        - Experience working with drug formulations (liquid, pills, etc.) for oral delivery.
+        <br>
+        - Experience collaborating or working with animal models (rodents, dogs, pigs).
+        <br>
+        - Strong record of deliberate mentorship or management of research technicians.
+        <br>
+        - Proven ability to lead the scientific direction of a project.
+        <br>
+        - Strong written and oral communication skills for technical and non-technical audiences.
+        <br>
+        - Conscientious team member with experience taking and giving constructive feedback.
+        <br>
+        <br>
+        About Syntis Bio
+        Syntis Bio is a late stage, preclinical company developing a new class of therapy. Through novel formulations, we create
+        both simple oral therapies and treatments that target specific tissues. Our platform offers better outcomes through
+        fewer doses, increased bioavailability, and higher efficacy to manage conditions affecting hundred of millions of patients
+        all over the world.
+        Syntis Bio is an equal opportunity employer that is committed to diversity and inclusion in the workplace. We prohibit
+        discrimination and harassment of any kind based on race, color, sex, religion, age, sexual orientation, gender identity,
+        national origin, disability, genetic information, pregnancy, or any other protected characteristic as outlined by applicable
+        laws.
+        <br>
+        <br>
+        Syntis Bio is pleased to offer:
+        <br>
+        <br>
+        - Medical, dental, and vision coverage options.
+        <br>
+        - Flexible time off.</p>
+      
     </div>
   </div>
-  <a href="mailto: careers@syntis.bio">careers@syntis.bio</a>
 </body>
+<script>
+  function minimize(clickID) {
+  console.log(clickID);
+  var paragraphID = clickID + "Bio";
+  var text = document.getElementById(paragraphID)
+  console.log(paragraphID)
+  if (text.style.visibility === "hidden") {
+    text.style.visibility = "visible";
+    document.getElementById(clickID).style.backgroundImage = "url('/assets/svg/remove.svg')"
+  } else {
+    text.style.visibility = "hidden"
+    document.getElementById(clickID).style.backgroundImage = "url('/assets/svg/add.svg')"
+  }
+}
+</script>
 </html>
