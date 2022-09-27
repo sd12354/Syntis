@@ -405,9 +405,11 @@ ion-icon {
   .careers p {
     top: 350px;
   }
+
   .partners {
+    top: 400px;
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto auto auto;
   }
 }
 .grid-item button {
@@ -462,17 +464,19 @@ svg:hover {
   justify-content: center;
   margin: 0 auto;
   place-items: center;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
 }
 .partners img {
+  padding: 16px;
   position: relative;
   height: auto;
-  max-width: 60%;
+  width: 400px;
+  filter: drop-shadow(0px 10px 3px black);
 }
 #partnersText {
   position: relative;
-  top: 150px;
+  top: 120px;
   font-size: 2rem;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -486,6 +490,9 @@ svg:hover {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1rem;
   top: 740px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
 }
 .applications {
   justify-content: center;
