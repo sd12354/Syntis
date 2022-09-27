@@ -9,9 +9,6 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: white;
 }
-* {
-  box-sizing: border-box;
-}
 button {
   outline: none;
 }
@@ -110,7 +107,7 @@ h1 {
   text-align: center;
   padding: 20px;
   width: 100vw;
-  top: -700px;
+  top: -750px;
   position: relative;
   padding-bottom: 80px;
 }
