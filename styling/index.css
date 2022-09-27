@@ -1,14 +1,17 @@
 body {
   background-color:  #21283c;
   margin: 0px;
+  width: 100%;
   padding: 0px;
-  height: 200px;
+  height: fit-content;
   overflow-x: hidden;
   justify-content: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: white;
 }
-
+* {
+  box-sizing: border-box;
+}
 button {
   outline: none;
 }
