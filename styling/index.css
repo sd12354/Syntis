@@ -2,7 +2,7 @@ body {
   background-color:  #21283c;
   margin: 0px;
   padding: 0px;
-  height: 2000px;
+  height: 200px;
   overflow-x: hidden;
   justify-content: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -248,7 +248,7 @@ ion-icon {
   min-height: 1100px;
   max-height: 00px;
   position: relative;
-  top: 100px;
+  top: -100px;
   padding-top: 0px;
   padding: 40px;
   text-align: center;
@@ -407,6 +407,8 @@ ion-icon {
   }
 
   .partners {
+    top: 600px;
+    display: flex;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
   }
@@ -463,7 +465,7 @@ svg:hover {
   justify-content: center;
   margin: 0 auto;
   place-items: center;
-  top: -110px;
+  top: -290px;
   grid-row-gap: 40px;
   grid-column-gap: 40px;
   box-shadow: 20px 20px rgba(0,0,0,.15);
@@ -477,7 +479,7 @@ svg:hover {
 }
 #partnersText {
   position: relative;
-  top: -150px;
+  top: -350px;
   font-size: 2rem;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
