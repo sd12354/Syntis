@@ -521,6 +521,7 @@ svg:hover {
 }
 
 .partners img {
+  cursor: grab;
   padding: 0px;
   position: relative;
   height: auto;
@@ -597,4 +598,14 @@ svg:hover {
   left: 10px;
   box-shadow: 20px 20px 10px 10px rgba(0,0,0,.15);
   border-radius: 25px;
+}
+
+#backToTop {
+  background-color: transparent;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+  bottom: 290px;
+  position: relative;
 }
