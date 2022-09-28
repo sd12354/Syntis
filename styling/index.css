@@ -426,6 +426,18 @@ ion-icon {
     display: none;
   }
 }
+@media only screen and (max-width: 980px) {
+
+  #mobileText {
+    display: block;
+  }
+  .mobilePartners {
+    display: block;
+  }
+  .partners {
+    display: none;
+  }
+}
 .grid-item button {
   background-color:#283149;
   border: none;
