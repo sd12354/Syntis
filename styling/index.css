@@ -429,10 +429,10 @@ ion-icon {
 @media only screen and (max-width: 980px) {
 
   #mobileText {
-    display: block;
+    display: flex;
   }
   .mobilePartners {
-    display: block;
+    display: flex;
   }
   .partners {
     display: none;
