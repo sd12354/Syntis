@@ -3,11 +3,14 @@ body {
   margin: 0px;
   width: 100%;
   padding: 0px;
-  height: 100px;
+  height: fit-content;
   overflow-x: hidden;
   justify-content: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: white;
+  height: 800px;
+  overflow-x: none;
+  justify-content: center;
 }
 button {
   outline: none;
@@ -257,7 +260,7 @@ ion-icon {
   min-height: 1100px;
   max-height: 00px;
   position: relative;
-  top: 90px;
+  top: -100px;
   padding-top: 0px;
   padding: 40px;
   text-align: center;
@@ -509,12 +512,12 @@ svg:hover {
   margin: 0 auto;
   position: relative;
   place-items: center;
-  bottom: 100px;
+  bottom: 560px;
   grid-row-gap: 0px;
-  grid-column-gap: 130px;
+  grid-column-gap: 150px;
   box-shadow: 20px 20px rgba(0,0,0,.15);
   left: -90px;
-
+  padding-bottom: 300px;
 }
 
 .partners img {
@@ -533,7 +536,7 @@ svg:hover {
   justify-content:center ;
   text-align: center;
   position: relative;
-  top: 100px;
+  top: -400px;
   font-size: 2.5rem;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
