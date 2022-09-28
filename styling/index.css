@@ -490,6 +490,7 @@ svg:hover {
   place-items: center;
   position: relative;
   top: 1290px;
+  width: 100vw;
   grid-row-gap: 40px;
   grid-column-gap: 40px;
   box-shadow: 20px 20px rgba(0,0,0,.15);
@@ -515,7 +516,7 @@ svg:hover {
 }
 .partners {
   display:block;
-  width: 100%;
+  width: 100vw;
   padding: 100px;
   height: fit-content;
   background-color: #283149;
