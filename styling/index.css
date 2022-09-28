@@ -113,6 +113,7 @@ h1 {
   padding-bottom: 80px;
 }
 .about-us h2 {
+  letter-spacing: 2.5px;
   padding: 40px;
   text-align: center;
   color:#21283c;
@@ -147,7 +148,7 @@ h1 {
   position: relative;
   width: 100vw;
   height: fit-content;
-  top: -850px;
+  top: -800px;
   padding: auto;
   color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -201,6 +202,7 @@ a {
   font-size: 1.25rem;
   background-color: #283149;
   background-image: url(/assets/svg/add.svg);
+  z-index: 2;
 }
 
 .footer {
@@ -238,16 +240,18 @@ ion-icon {
 .grid-item img {
  width: 40%;
  left: -50px;
+ margin: 0 auto;
  height: 0%;
  border-radius: 75px;
  position: relative;
- justify-content: left;
+ justify-content: center;
+ text-align: center;
 }
 .grid-item p {
   font-size: 1.3rem;
 }
 .careers {
-  background-color: #374365;
+  background-color: #283149;
   height: fit-content;
   min-height: 1100px;
   max-height: 00px;
@@ -281,7 +285,9 @@ ion-icon {
   justify-content: center;
 }
 
-
+.careers h3 {
+  font-size: 2rem;
+}
 
 .footer p {
   font-size: 1.1rem;
@@ -410,16 +416,14 @@ ion-icon {
   .careers p {
     top: 350px;
   }
-
-  .partners {
-
-    top:90vh;
-    z-index: -1;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+  #mobileText {
+    display: block;
   }
-  .partners img {
-    width: 200px;
+  .mobilePartners {
+    display: block;
+  }
+  .partners {
+    display: none;
   }
 }
 .grid-item button {
@@ -462,9 +466,10 @@ svg:hover {
 
 }
 .mobilePartners {
+  display: none;
   padding: 100px;
   height: fit-content;
-  background-color: #374365;
+  background-color: #283149;
   grid-template-columns: auto ;
   grid-template-rows: auto auto auto auto;
   text-align: center;
@@ -490,14 +495,17 @@ svg:hover {
   transition: 2s ease-in-out;
 }
 #mobileText {
+  display: none;
+  font-size: 2rem;
   position: relative;
   bottom: -900px;
+
 }
 .partners {
-  display: none;
+  display:block;
   padding: 100px;
   height: fit-content;
-  background-color: #374365;
+  background-color: #283149;
   grid-template-columns: auto ;
   grid-template-rows: auto auto auto auto;
   text-align: center;
@@ -510,7 +518,9 @@ svg:hover {
   grid-column-gap: 40px;
   box-shadow: 20px 20px rgba(0,0,0,.15);
 }
+
 .partners img {
+  background-color: white;
   padding: 16px;
   position: relative;
   height: auto;
