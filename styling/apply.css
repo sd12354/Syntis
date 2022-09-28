@@ -2,8 +2,8 @@ body {
   background-color:  #21283c;
   margin: 0px;
   padding: 0px;
-  height: 2000px;
-  overflow-x: hidden;
+  height: 800px;
+  overflow-x: none;
   justify-content: center;
 }
 button {
@@ -36,10 +36,11 @@ html {
   height: 15px;
   width: fit-content;
   padding: 16px;
-
+  height: fit-content;
 }
 .apps h1 {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 .apps a {
   background-color: #FC70AF;
@@ -68,6 +69,7 @@ h1 {
   font-family: 'Plus Jakarta Sans', sans-serif;
   padding: 16px;
   text-align: center;
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -89,6 +91,7 @@ a {
   background-image: url(/assets/svg/add.svg);
   border: none;
   top: -65px;
+  z-index: 2;
 }
 .apps p {
   color: white;
@@ -106,12 +109,19 @@ a {
   color: #FC70AF;
 }
 #scientistBio {
-  visibility: hidden;
+  padding-top: 16px;
+  visibility: visible;
   animation: flow .5s ease-in-out ;
+  position: relative;
+    text-align: left;
+
 }
 #researchBio {
-  visibility: hidden;
+  padding-top: 16px;
+  text-align: left;
+  visibility: visible;
   animation: flow .5s ease-in-out ;
+  position: relative;
 }
 
 @media only screen and (max-width: 980px) {
@@ -121,5 +131,11 @@ a {
   }
   h1 {
     top: 25px;
+  }
+  #email {
+    top: 130px;
+  }
+  .apps button {
+    display: none;
   }
 }

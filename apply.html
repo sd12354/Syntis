@@ -27,6 +27,9 @@
   <link rel="icon" href="/assets/png/icon.png">
   <link rel="stylesheet" href="/styling/apply.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 <link href="https://www.dafontfree.net/embed/cm91bmRlZC1lbGVnYW5jZS1yZWd1bGFyJmRhdGEvMTUvci82OTE5MS9Sb3VuZGVkIEVsZWdhbmNlLnR0Zg" rel="stylesheet" type="text/css"/>
@@ -38,7 +41,7 @@
   <a href="mailto: careers@syntis.bio" id="email">careers@syntis.bio</a>
   <div class="applications">
     <div class="apps">
-      <h1>Research Associate</h1>
+      <h1 style="font-weight: bolder;">Research Associate</h1>
       <button id="research" onclick="minimize(this.id)"></button>
       <p id="researchBio">
         Research Associate
@@ -117,7 +120,7 @@ Syntis Bio is pleased to offer:
         <br>
         The Responsibilities:
         <br>
-         - Build out composition space of formulation strategies.
+               - Build out composition space of formulation strategies.
         <br>
         - Propose new formulation strategies for optimal performance, production, or stability.
         <br>
@@ -173,7 +176,8 @@ Syntis Bio is pleased to offer:
         <br>
         - Medical, dental, and vision coverage options.
         <br>
-        - Flexible time off.</p>
+        - Flexible time off.
+        </p>
       
     </div>
   </div>
@@ -182,7 +186,7 @@ Syntis Bio is pleased to offer:
   function minimize(clickID) {
   var paragraphID = clickID + "Bio";
   var text = document.getElementById(paragraphID)
-  if (text.style.visibility === "visible") {
+  if (text.style.display === "none") {
     text.style.visibility = "hidden";
     document.getElementById(clickID).style.backgroundImage = "url('/assets/svg/add.svg')"
   } else {
