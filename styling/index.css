@@ -255,7 +255,9 @@ ion-icon {
   font-size: 1.3rem;
 }
 .careers {
-  background-color: #283149;
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #283149, #FC70AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #283149, #FC70AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: fit-content;
   min-height: 1100px;
   max-height: 00px;
@@ -264,7 +266,7 @@ ion-icon {
   padding-top: 0px;
   padding: 40px;
   text-align: center;
-  color: white;
+  color:#ffffff;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
